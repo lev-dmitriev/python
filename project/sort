@@ -1,14 +1,18 @@
 
-import random, easygui
+#импортируемся к easygui
+import easygui
 
 inpt = []
 outpt = []
+#количество чисел
 kolvo = int(easygui.enterbox("сколько чисел желаете ввести:"))
+#вписываем числа в список
 for q in range(0, kolvo):
     number = int(easygui.enterbox("Вводите по одному числу после каждого нажимая Enter:"))
     inpt.append(number)
 print inpt
 
+#сортируем числа
 f = kolvo + 1
 for t in range(1, f):
     number = inpt[0]
